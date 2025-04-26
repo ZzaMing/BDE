@@ -1,3 +1,3 @@
-import numpy as np
+# Github ,Python Test
 
-a = np.array
+print("Hello Wolrd !")
