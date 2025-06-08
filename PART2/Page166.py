@@ -60,5 +60,5 @@ df = pd.read_csv('https://raw.githubusercontent.com/YoungJinBD/data/main/logdata
 # df['시간 정보'] = df['로그'].str.extract(r'(\d{2}:\d{2}:\d{2})')
 # print(df.head())
 
-df['한글 정보'] = df['로그'].str.extract(r'([가-힣]+)')
-print(df.head())
+# df['한글 정보'] = df['로그'].str.extract(r'([가-힣]+)')
+# print(df.head())
