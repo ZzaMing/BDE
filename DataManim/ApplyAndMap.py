@@ -28,4 +28,14 @@ df['age_state'] = df['Customer_Age']//10 * 10
 
 #------------------------60 --------------------------------
 
+df['new_limit'] = (df['Credit_Limit'] >= 4500).astype(int)
+# result = df['new_limit'].value_counts()
+# result = df.groupby('new_limit').size()
+
+df['new_state'] = ((df['Marital_Status'] == 'Married') & (df['Card_Category'] == 'Platinum')).astype(int)
+# result = df['new_state'].value_counts()
+
+df['Gender'] = df['Gender'].map(lambda x: 'male' if x == 'M' else 'female')
+result = df.groupby('Gender').size()
+
 print(result)
