@@ -1,12 +1,13 @@
 import pandas as pd
 import numpy as np
-pd.set_option('display.max_columns', None)
+# pd.set_option('display.max_columns', None)
+
 
 DataUrl = 'https://raw.githubusercontent.com/Datamanim/pandas/main/chipo.csv'
 df = pd.read_csv(DataUrl)
 result = 0
 
-# result = df.loc[df['quantity'] == 3].reset_index(drop=True).head()
+# result = df.loc[df['quantity'] == 3].reset_index(drop=True)
 
 # result = df[['quantity', 'item_price']]
 
