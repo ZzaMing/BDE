@@ -31,7 +31,7 @@ print(cross_tab)
 
 #카이제곱 독립
 from scipy import stats 
-chi2, p_value, dof, expected = stats.chi2_contingency(cross_tab)
+chi2, p_value, dof, expected = stats.chi2_contingency(cross_tab, correction=False)
 print(chi2.round(2))
 
 if p_value < 0.05: # 작대 큰귀
