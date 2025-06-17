@@ -33,6 +33,7 @@ print(cross_tab)
 from scipy import stats 
 chi2, p_value, dof, expected = stats.chi2_contingency(cross_tab, correction=False)
 print(chi2.round(2))
+# print(help(stats.chi2_contingency))
 
 if p_value < 0.05: # 작대 큰귀
     result = '귀무가설 기각'

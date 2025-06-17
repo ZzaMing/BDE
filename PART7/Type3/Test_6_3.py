@@ -12,7 +12,7 @@ std_wh = df['work_hours'].std().round(3)
 from scipy import stats
 from scipy.stats import norm
 statistic, p_value = stats.kstest(df, 'norm', args=(mean_wh, std_wh))
-# print(statistic)
+print(help(stats.kstest))
 # print(p_value)
 
 #======================================================
